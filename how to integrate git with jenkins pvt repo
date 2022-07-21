@@ -7,3 +7,7 @@
    22  git init
    23  git add .
    24  git commit -m "chat application"
+   
+   ######how to generate ssh key
+     27  ssh-keygen -t rsa
+   28  cat /root/.ssh/id_rsa.pub
