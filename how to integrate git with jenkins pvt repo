@@ -1,0 +1,9 @@
+ 16  git clone https://github.com/gopal1409/springboot-chat-app.git
+   17  cd springboot-chat-app/
+   18  rm -rf .git
+   19  git config --global user.name "gopal"
+   20  git config --global user.email "gopal1409@gmail.com"
+   21  git add .
+   22  git init
+   23  git add .
+   24  git commit -m "chat application"
