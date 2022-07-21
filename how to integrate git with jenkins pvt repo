@@ -3,7 +3,7 @@
    18  rm -rf .git
    19  git config --global user.name "gopal"
    20  git config --global user.email "gopal1409@gmail.com"
-   21  git add .
+
    22  git init
    23  git add .
    24  git commit -m "chat application"
