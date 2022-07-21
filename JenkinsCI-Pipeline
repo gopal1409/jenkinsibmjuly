@@ -10,7 +10,14 @@ pipeline {
         stage('Code from SCM') {
             steps {
                 // Get some code from a GitHub repository
-                git 'https://github.com/jglick/simple-maven-project-with-tests.git'
+                git credentialsId: 'git-token-2', url: 'git@github.com:gopal1409/ibmchatapp.git'
+
+            }
+        }
+        stage('Mvn build') {
+            steps {
+                // Get some code from a GitHub repository
+                sh 'mvn -B -DskipTests clean package'
 
             }
         }
