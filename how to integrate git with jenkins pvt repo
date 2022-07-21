@@ -11,3 +11,6 @@
    ######how to generate ssh key
      27  ssh-keygen -t rsa
    28  cat /root/.ssh/id_rsa.pub
+   
+   #####once you generat ethe ssh key
+   git push -u origin master
