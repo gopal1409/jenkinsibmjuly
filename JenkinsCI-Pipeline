@@ -35,5 +35,12 @@ pipeline {
 
             }
         }
+        stage('code coverage') {
+            steps {
+                // Get some code from a GitHub repository
+                jacoco()
+
+            }
+        }
     }
 }
