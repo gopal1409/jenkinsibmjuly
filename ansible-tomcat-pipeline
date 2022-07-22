@@ -28,5 +28,11 @@ pipeline {
                 }
             }
         }
+        stage('ansible') {
+            steps {
+                git 'https://github.com/gopal1409/ibmjulytomcat.git'
+                ansiblePlaybook credentialsId: 'ansible-id', disableHostKeyChecking: true, inventory: 'dev.inv', playbook: 'tomcat.yml'
+            }
+        }
     }
 }
