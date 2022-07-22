@@ -9,7 +9,7 @@
   228  git branch docker
   229  git checkout docker
   230  nano Jenkinsfile
-  231  vi Jenkinsfile
+
   232  git add .
   233  git commit -m "docker pipeline"
   234  git push -u origin docker
