@@ -1,0 +1,24 @@
+216  mkdir multi
+  217  cd multi/
+  218  nano Jenkinsfile
+219  git init
+  220  git add .
+  221  git commit -m "master pipeline"
+  225  git remote add origin git@github.com:gopal1409/ibmmulti.git
+   227  git push -u origin master
+  228  git branch docker
+  229  git checkout docker
+  230  nano Jenkinsfile
+  231  vi Jenkinsfile
+  232  git add .
+  233  git commit -m "docker pipeline"
+  234  git push -u origin docker
+  235  git checkout master
+  236  git branch ansible
+  237  git checkout ansible
+  238  nano Jenkinsfile
+242  git add .
+  243  git commit -m "ansible pipeline"
+
+  245  git push -u origin ansible
+
