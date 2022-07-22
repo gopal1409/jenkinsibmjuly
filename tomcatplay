@@ -1,0 +1,10 @@
+200  git clone https://github.com/gopal1409/ibmjulytomcat.git
+  201  cd ibmjulytomcat/
+  202  rm -rf .git
+  203  nano dev.inv
+  204  git init
+  205  git add .
+  206  git commit -m "tomcatplaybook"
+  207  git@github.com:gopal1409/ibmjulytomcat.git
+  208  git remote add origin git@github.com:gopal1409/ibmjulytomcat.git
+  209  git push -u origin master --force
