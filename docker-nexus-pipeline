@@ -39,5 +39,14 @@ pipeline {
                 }
             }
         }
+        stage('push image') {
+            steps {
+                script {
+                    withDockerRegistry(credentialsId: 'nexus-cred', url: 'http://54.235.201.140:8085') {
+                        dockerImage.push()
+                       }
+                }
+            }
+        }
     }
 }
